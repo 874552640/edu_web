@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Website</title>
+  <style>
+    /* CSS styles can be adjusted as needed */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .course {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Course List</h1>
+  <div class="courses">
+    <div class="course" onclick="redirectToLoginPage()">
+      <h2>Course Name 1</h2>
+      <p>Course Description 1</p>
+    </div>
+    <div class="course" onclick="redirectToLoginPage()">
+      <h2>Course Name 2</h2>
+      <p>Course Description 2</p>
+    </div>
+    <div class="course" onclick="redirectToLoginPage()">
+      <h2>Course Name 3</h2>
+      <p>Course Description 3</p>
+    </div>
+    <div class="course" onclick="redirectToLoginPage()">
+      <h2>Course Name 4</h2>
+      <p>Course Description 4</p>
+    </div>
+    <div class="course" onclick="redirectToLoginPage()">
+      <h2>Course Name 5</h2>
+      <p>Course Description 5</p>
+    </div>
+    <div class="course" onclick="redirectToLoginPage()">
+      <h2>Course Name 6</h2>
+      <p>Course Description 6</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function redirectToLoginPage() {
+    window.location.href = "login.html"; // Change "login.html" to the actual URL of your login page
+  }
+</script>
+
+
+
+
+
+
+<script>
+  // Open login modal
+  function login() {
+    document.getElementById('loginModal').style.display = 'block';
+  }
+
+  // Close modal
+  document.querySelectorAll('.close').forEach(function(element) {
+    element.onclick = function() {
+      document.querySelectorAll('.modal').forEach(function(modal) {
+        modal.style.display = 'none';
+      });
+    }
+  });
+
+  // Show register modal
+  function showRegister() {
+    document.getElementById('registerModal').style.display = 'block';
+    document.getElementById('loginModal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

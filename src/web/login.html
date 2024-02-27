@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <button type="submit" onclick="redirectToCoursePage()">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="redirectToRegisterPage()">Register</a></p>
+  </div>
+</div>
+
+<script>
+  function redirectToRegisterPage() {
+    window.location.href = "register.html"; // Change "login.html" to the actual URL of your login page
+  }
+
+  function redirectToCoursePage() {
+    window.location.href = "course_mainPage.html";
+  }
+</script>
+
+
+</body>
+</html>
